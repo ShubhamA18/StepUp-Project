@@ -1,0 +1,79 @@
+/* src/App.css */
+.app {
+    display: flex;
+    padding: 20px;
+}
+
+.filters {
+    width: 200px;
+    border-right: 1px solid #ddd;
+    /* Add vertical line between filters and product cards */
+    padding-right: 20px;
+    /* Add some padding to the right of filters */
+    margin-right: 20px;
+    /* Add some margin to the right of filters */
+}
+.filter-box{
+    margin-top: 20px;
+}
+
+.filter-content{
+    padding-left:  30px;
+    height: 28px;
+}
+
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 1px solid #ddd;
+    width: 200px;
+    height: 400px;
+}
+
+.card img{
+    width: auto !important;
+
+}
+.card-title{
+    font-weight: bold;
+    font-size: 15px;
+}
+.card-body p{
+    font-size: 15px;
+}
+.price {
+    font-weight: bold;
+    font-size: 18px;
+    color: green;
+    margin-right: 5px;
+}
+.realPrice{
+    font-weight: 600;
+    font-size: 15px;
+}
+
+
+
+@media (max-width: 600px) {
+    .app {
+        flex-direction: column;
+    }
+
+    .filters {
+        width: 100%;
+        border-right: none;
+        /* Remove vertical line on smaller screens */
+        padding-right: 0;
+        /* Remove padding on smaller screens */
+        margin-right: 0;
+        /* Remove margin on smaller screens */
+    }
+
+    .cards {
+        width: 100%;
+    }
+}

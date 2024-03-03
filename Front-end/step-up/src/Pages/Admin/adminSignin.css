@@ -1,0 +1,38 @@
+
+.signin-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 500px 40px 500px;
+    padding: 60px 0px;
+    border: 2px solid black;
+    border-radius: 15px;
+  }
+
+  .signin-box h6 {
+    padding-top: 15px;
+  }
+  
+  .signin-box h2 {
+    font-weight: 600;
+  }
+  
+  .box1 {
+    padding-top: 20px;
+    text-align: center;
+    width: 500px !important;
+    margin-right: 60px;
+  }
+  .box1 TextField{
+    width: 100px;
+  }
+  
+  .button1 {
+    padding-top: 20px;
+    text-align: center;
+  }
+  
+  .button1 a {
+    width: 150px;
+    height: 40px;
+  }
