@@ -1,0 +1,20 @@
+/*list box css*/
+.selectDrop1 {width: 200px; height: 205px; background: #fff ; position: absolute; top: 135%; left: -11px; 
+    z-index: 100;box-shadow: 0 3px 6px rgb(0 0 0 / 20%);padding: 10px;}
+
+/*list open css*/
+.selectDrop1 .openSelect{display: block;padding: 10px 0px;}
+/*input text field css*/   
+.searchField input { width: 100%; height: 38px; border: 1px solid  rgb(0, 0, 255);outline: none;padding: 0px 15px;}
+
+/*list-1 css*/
+.selectDrop1 .searchResults{width: 100%; margin: 0px; padding: 10px 0px; max-height: 150px; overflow-y: scroll;}
+.selectDrop .searchResults::-webkit-scrollbar{width: 10px !important;}
+.selectDrop .searchResults::-webkit-scrollbar-thumb{background: #ccc !important;}
+
+/*list-2 css*/
+.selectDrop1 .searchResults li{list-style: none; font-size: 16px;width: 100%;border-radius: 5px; padding: 10px; color :rgba(0,0,0,0.7);}
+.selectDrop1 .searchResults li:hover{background:rgb(85, 96, 245); color: #f1f1f1;}
+.selectDrop1 .searchResults li.active{background: #f1f1f1;color: #000 !important;}
+
+.selectDrop1 .openSelect .arrow{position: absolute;top: 5px;right: 5px;}

@@ -1,0 +1,65 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css');
+
+.homeSlider {
+    padding: 25px 0px;
+    align-items: center;
+}
+
+.home_slider_main {
+    border-radius: 20px;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.home_slider_main img {
+    width: 100%;
+   
+}
+
+.slick-arrow {
+    position: absolute;
+    top: 47%;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50% !important;
+
+    z-index: 100 !important;
+    font-family: FontAwesome !important;
+}
+
+.slick-arrow.slick-next {
+    right: 2% !important;
+    font-family: Font;
+}
+
+.slick-arrow.slick-prev {
+    left: 2% !important;
+}
+
+.slick-prev::before {
+    content: "\f053" !important;
+    font-family: FontAwesome !important;
+}
+
+.slick-next::before {
+    content: "\f054" !important;
+    font-family: FontAwesome !important;
+}
+
+.home_slider_main .slick-dots {
+    position: absolute;
+    bottom: 20px !important;
+}
+
+.home_slider_main .slick-dots button::before {
+    width: 10px !important;
+    height: 10px !important;
+    font-size: 16px !important;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #fff;
+}
