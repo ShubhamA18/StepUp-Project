@@ -1,0 +1,151 @@
+header {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 0px 0px;
+}
+
+header .row {
+    height: 140px;
+    width: 100%;
+    margin: 12px 0px 0px 0px;
+    background-color: rgb(234, 234, 234);
+    border-radius: 5px;
+}
+
+/*logo css*/
+header .logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header .logo img {
+    width: 75px;
+    height: 120px;
+    margin-left: 15px;
+}
+
+/*search bar text css*/
+ header .headerSearch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*
+header .headerSearch .selectDrop {
+    width: 150px;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    color: rgb(0, 0, 0);
+    padding-left: 20px;
+} */
+
+/*search bar vertical line css*/
+/* header .headerSearch .selectDrop:after {
+    content: '';
+    width: 1px;
+    height: 28px;
+    background: rgb(0, 0, 255);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+} */
+
+/*search bar inner css*/
+ header .headerSearch .search {
+    border: 1px solid rgb(0, 0, 255);
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+    width: 95%;
+    /* width: 100%;
+    padding-left: 20px;
+    position: relative; */
+}
+
+header .headerSearch .search input {
+    width: 94%;
+    border: 0px;
+    outline: none !important; 
+    font-size: 18px;
+}
+
+header .headerSearch .search .searchicon {
+    position: absolute;
+    opacity: 0.8;
+    font-size: 25px !important;
+} 
+
+/*tabs css*/
+ header .headertabs {
+    /* padding-left: 40px;
+    margin: 50px 0px 0px 75px; */
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+header .headertabs ul{
+    text-align: center;
+    width: 100%;
+}
+header .headertabs li {
+    position: relative;
+    margin-left: 10px;
+}
+
+header .headertabs li span {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+header .headertabs li span .badge {
+    width: 16px;
+    height: 16px;
+    font-weight: 10;
+    position: absolute;
+    top: -10px;
+    left: 50px;
+    font-size: small;
+} 
+
+/*Account dropdown css*/
+.dropdownmenu {
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 10px 5px;
+    width: 170px !important; 
+    height: auto;
+    background: #fff;
+    box-shadow: 0px 3px 6px rgb(0 0 0 / 20%);
+    z-index: 1000;
+}
+
+.dropdownmenu li {
+    width: 100% !important;
+    list-style: none;
+    margin: 0px !important;
+}
+
+.dropdownmenu li button {
+    width: 100% !important;
+    text-align: left !important;
+    justify-content: flex-start !important;
+    color: rgb(0,0,0) !important;
+    text-transform: capitalize;
+    font-size: 15px;
+    padding: 8px 15px !important;
+}
+
+.dropdownmenu li button svg{
+    opacity: 0.7;
+    margin-right: 8px !important;
+}
+
+.dropdownmenu li button:hover{
+    background-color: rgb(85, 96, 245) !important ;
+    color: #fff !important;
+}

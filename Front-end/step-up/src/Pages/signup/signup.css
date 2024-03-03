@@ -1,0 +1,38 @@
+.signup-box {
+
+    margin: 40px 350px 40px 350px;
+    padding: 45px 0px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.signup-box h2 {
+    text-align: center;
+    font-weight: 600;
+}
+
+.box1 {
+    padding: 10px 0px 0px 60px;
+    display: flex;
+    flex-direction: row;
+    width: 750px;
+  
+}
+
+.box1 .input {
+    margin-left: 20px;
+}
+
+.address-box1{
+    padding: 10px 0px 0px 60px;
+    width: 750px;
+}
+
+.user-button a {
+    width: 150px;
+    height: 40px;
+}
+
+.user-button h6{
+    padding-top: 10px;
+}
