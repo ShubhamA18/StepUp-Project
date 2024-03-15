@@ -1,0 +1,40 @@
+.profile {
+    padding: 20px 0px;
+}
+
+.profile h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.profile .form {
+    margin-left: 25%;
+}
+
+.profile .box1 .input {
+    margin-left: 20px;
+}
+
+.profile .box1 {
+    padding: 12px 0px 0px 60px;
+    display: flex;
+    flex-direction: row;
+    width: 60% !important;
+}
+
+.profile .address-box1 {
+    padding: 10px 0px 0px 60px;
+    width: 60% !important;
+}
+
+.profile .update-button {
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+.profile .update-button button {
+    width: 150px;
+    height: 40px;
+}

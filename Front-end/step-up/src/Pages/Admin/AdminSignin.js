@@ -21,14 +21,25 @@ const AdminSignin = () => {
                 console.log(res.data);
 
                 if (res.data.message === "Email not exits") {
-                    alert("Email not exits");
+                    alert("Name not exits");
                 }
                 else if (res.data.message === "Login Success") {
-                    // localStorage.setItem(email,password);
+                    sessionStorage.clear();
                     navigate('/admin/home');
+                    // if(sessionStorage.getItem("id")==="null" && sessionStorage.getItem("email")==="null"){
+                    //     sessionStorage.setItem("email",name);
+                    //     sessionStorage.setItem("id",res.data.id);
+                    //     navigate('/admin/home');
+                    // }
+                    // else{
+                    //     sessionStorage.clear();
+                    //     sessionStorage.setItem("email",name);
+                    //     sessionStorage.setItem("id",res.data.id);
+                    //     navigate('/admin/home');
+                    // }
                 }
                 else {
-                    alert("Incorrect Email and Password not match");
+                    alert("Incorrect Name and Password not match");
                 }
             }, fail => {
                 console.error(fail); // Error!
@@ -40,7 +51,7 @@ const AdminSignin = () => {
     }
 
     return (
-        <div className="signin-box">
+        <div className="admin-signin-box">
             <h2>Admin Sign in</h2>
             <form>
                 <div className="box1">

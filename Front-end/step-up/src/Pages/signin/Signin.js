@@ -1,6 +1,7 @@
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import axios from "axios";
+import * as React from 'react';
 import { useState } from "react";
 import { Link, useNavigate } from 'react-router-dom';
 import "./signin.css";
@@ -16,7 +17,7 @@ const Signin = () => {
         email: "",
         password: "",
     });
-    
+
 
     const inputChangeHandler = (event) => {
         const { type, name, value } = event.target;
@@ -56,24 +57,24 @@ const Signin = () => {
                     newError.email = "Incorrect Email";
                     setError(newError);
                 }
-                else if(res.data.message==="password Not Match"){
+                else if (res.data.message === "password Not Match") {
                     // alert("password is incorrect");
                     newError.password = "Incorrect Password";
                     setError(newError);
                 }
                 else if (res.data.message === "Login Success") {
-                    if(sessionStorage.getItem("id")==="null" && sessionStorage.getItem("email")==="null"){
-                        sessionStorage.setItem("email",item.email);
-                        sessionStorage.setItem("id",res.data.id);
+                    if (sessionStorage.getItem("id") === "null" && sessionStorage.getItem("email") === "null") {
+                        sessionStorage.setItem("email", item.email);
+                        sessionStorage.setItem("id", res.data.id);
                         navigate('/');
                     }
-                    else{
+                    else {
                         sessionStorage.clear();
-                        sessionStorage.setItem("email",item.email);
-                        sessionStorage.setItem("id",res.data.id);
+                        sessionStorage.setItem("email", item.email);
+                        sessionStorage.setItem("id", res.data.id);
                         navigate('/');
                     }
-                    
+
                 }
                 else {
                     // alert("Incorrect Email and Password not match");
@@ -90,7 +91,6 @@ const Signin = () => {
         }
     }
 
-
     return (
         <div className="signin-box">
             <h2>Sign in</h2>
@@ -106,7 +106,7 @@ const Signin = () => {
                         helperText={error.email}
                         error={Boolean(error.email)}
                         value={item.email}
-                        onChange={inputChangeHandler} 
+                        onChange={inputChangeHandler}
                     />
                 </div>
 
@@ -120,10 +120,27 @@ const Signin = () => {
                         autoComplete="current-password"
                         helperText={error.password}
                         error={Boolean(error.password)}
-
                         value={item.password}
-                        onChange={inputChangeHandler} 
+                        onChange={inputChangeHandler}
                     />
+
+                    {/* <OutlinedInput
+                        id="outlined-adornment-password"
+                        type={showPassword ? 'text' : 'password'}
+                        endAdornment={
+                            <InputAdornment position="end">
+                                <IconButton
+                                    aria-label="toggle password visibility"
+                                    onClick={handleClickShowPassword}
+                                    onMouseDown={handleMouseDownPassword}
+                                    edge="end"
+                                >
+                                    {showPassword ? <VisibilityOff /> : <Visibility />}
+                                </IconButton>
+                            </InputAdornment>
+                        }
+                        label="Password"
+                    /> */}
                 </div>
 
                 <div className='user-button'>

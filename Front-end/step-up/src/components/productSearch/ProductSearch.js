@@ -18,17 +18,9 @@ const ProductSearch = () => {
 
     // const [products, setProducts] = useState([]);
     
-
-    // useEffect(() => {
-    //     // Fetch product data when the component mounts
-    //     axios.get('https://your-api-endpoint.com/products')
-    //         .then(response => {
-    //             setProducts(response.data);
-    //         })
-    //         .catch(error => {
-    //             console.error('Error fetching product data:', error);
-    //         });
-    // }, []);
+    const addToCart=()=>{
+        
+    }
 
     const handleCheckboxChange = (category) => {
         console.log(categoryFilters);
@@ -98,7 +90,7 @@ const ProductSearch = () => {
                                 <p><span className='price'>₹{searchData.discountPrice} </span>
                                     <strike className="realPrice">₹{searchData.price}</strike></p>
                                 <div>
-                                    <Button variant="contained" className='add-to-cart-btn'>
+                                    <Button variant="contained" className='add-to-cart-btn' onClick={addToCart}>
                                         <ShoppingCartOutlinedIcon /> Add
                                     </Button>
                                     <Checkbox label="Wishlist" icon={<FavoriteBorder />} checkedIcon={<Favorite />}
