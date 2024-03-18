@@ -95,8 +95,6 @@ const Profile = () => {
         }));
     };
 
-
-
     const handleUpdate = (event) => {
         event.preventDefault();
         axios.put(`http://localhost:8080/api/user/updateUser/${user.id}`, user)
@@ -269,7 +267,6 @@ const Profile = () => {
 
                 <div className='update-button'>
                     <Button variant="contained" size="large" onClick={handleUpdate}>Update</Button>
-
                 </div>
 
             </form>

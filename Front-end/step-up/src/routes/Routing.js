@@ -28,13 +28,13 @@ const Routing = () => {
     };
 
     const isSigninPage=()=>{
-        const { pathname}=location;
+        const {pathname}=location;
         return pathname==='/user/signin' || pathname==='/user/signup';
     }
 
     const isAdminPages=()=>{
         const{pathname}=location;
-        return pathname==='/admin/product' || pathname==='/admin/order' || pathname==='/admin/home';
+        return pathname==='/admin/product' || pathname==='/admin/order' || pathname==='/admin/home' || pathname==='/admin/addProduct';
     }
 
     return (
