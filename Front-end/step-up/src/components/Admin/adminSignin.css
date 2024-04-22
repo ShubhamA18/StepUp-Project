@@ -1,0 +1,90 @@
+.admin-signin-box {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  margin: 5% 33% 5% 33%;
+  padding: 60px 0px;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+.admin-signin-box h2 {
+  text-align: center;
+  font-weight: 600;
+}
+
+.admin-signin-box .box1 {
+  padding: 2% 17% 0% 17%;
+  width: 100%;
+}
+
+/* .admin-signin-box .box1 input {
+  width: 100px;
+} */
+
+.admin-signin-box .button1 {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.admin-signin-box .button1 a {
+  width: 150px;
+  height: 40px;
+}
+
+@media screen and (max-width: 480px) {
+  .admin-signin-box {
+    margin: 15% 5% 5% 5%;
+  }
+  .admin-signin-box .box1 {
+    padding: 2% 10% 0% 10%;
+  }
+}
+
+@media screen and (max-width: 576px) and (min-width: 480px) {
+  .admin-signin-box {
+    margin: 15% 5% 5% 5%;
+  }
+  .admin-signin-box .box1 {
+    padding: 2% 10% 0% 10%;
+  }
+}
+
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  .admin-signin-box {
+    margin: 15% 10% 5% 10%;
+  }
+  .admin-signin-box .box1 {
+    padding: 2% 15% 0% 15%;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .admin-signin-box {
+    margin: 10% 20% 5% 20%;
+  }
+  .admin-signin-box .box1 {
+    padding: 2% 15% 0% 15%;
+  }
+}
+
+
+@media screen and (max-width: 1200px) and (min-width: 992px){
+  .admin-signin-box {
+    margin: 7% 25% 5% 25%;
+  }
+  .admin-signin-box .box1 {
+    padding: 2% 20% 0% 20%;
+  }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1200px){
+  .admin-signin-box {
+    margin: 5% 30% 5% 30%;
+  }
+  .admin-signin-box .box1 {
+    padding: 2% 20% 0% 20%;
+  }
+}
+

@@ -1,0 +1,105 @@
+.mainProduct{
+    margin-top: 30px;
+}
+.mainProduct .image img{
+    max-width: 100%;
+    height: auto;
+}
+.mainProduct .price{
+    color: black;
+    font-size: x-large;
+    margin-right: 15px;
+}
+
+.mainProduct .realPrice{
+    color:rgb(71, 71, 71);
+    font-size: large;
+    margin-right: 15px;
+}
+.mainProduct .discount{
+    font-size: large;
+    color: orange;
+    background-color: white;
+    margin:0px;
+    padding: 0px;
+}
+.sizes {
+    display: flex;
+}
+
+.sizes p{
+    border: 2px gray solid;
+    margin: 4px;
+    padding: 7px 18px;
+}
+
+.sizes .available:hover {
+    border: 2px black solid;
+    cursor: pointer;
+}
+.sizes .available:focus {
+    border: 2px black solid;
+}
+
+
+.sizes .unavailable {
+    color: red;
+    text-decoration: line-through;
+}
+
+.sizes .unavailable:hover {
+    border: 2px red solid;
+}
+
+
+.colors {
+    display: flex;
+}
+.colors .colorBox {
+    width: 50px;
+    height: 35px;
+    margin-right: 8px;
+    display: inline-block;
+    border: 1px solid #ccc;
+}
+.colors .colorBox:hover{
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+
+.button-cart{
+    border: 2px black solid;
+    padding: 12px 100px;
+    margin-right: 10px;
+    background-color: white;
+}
+
+.button-cart:hover{
+    color: white;
+    background-color: black;
+}
+
+.button-wishlist{
+    border: 2px black solid;
+    padding: 11px 30px;
+    background-color: white;
+}
+.button-wishlist:hover{
+    /* color: red; */
+    cursor: pointer;
+}
+
+.details span{
+    font-weight: bold;
+}
+
+.mainProduct .about{
+    margin-top: 20px;
+    font-size: large;
+}
+
+.mainProduct .details p{
+    font-size: large;
+    margin: 5px 0px;
+}

@@ -1,0 +1,30 @@
+.addProduct {
+    padding: 3% 10% 3% 10%;
+}
+.addProduct input{
+    width: 100% !important;
+}
+
+.addProduct label{
+    font-weight: 500;
+    margin-top: 7px;
+}
+.addProduct .image{
+    font-size: smaller;
+}
+
+.addProduct .removeBtn{
+    margin-top: 30px;
+}
+
+
+.addProduct input:focus,
+textarea:focus,
+select:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 2px solid #00BCD4;
+    outline-width: 0;
+    font-weight: 400
+}
