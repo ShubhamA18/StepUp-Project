@@ -1,38 +1,90 @@
+.admin-signin-box {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  margin: 5% 33% 5% 33%;
+  padding: 60px 0px;
+  border: 2px solid black;
+  border-radius: 15px;
+}
 
-.signin-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 40px 500px 40px 500px;
-    padding: 60px 0px;
-    border: 2px solid black;
-    border-radius: 15px;
-  }
+.admin-signin-box h2 {
+  text-align: center;
+  font-weight: 600;
+}
 
-  .signin-box h6 {
-    padding-top: 15px;
+.admin-signin-box .box1 {
+  padding: 2% 17% 0% 17%;
+  width: 100%;
+}
+
+/* .admin-signin-box .box1 input {
+  width: 100px;
+} */
+
+.admin-signin-box .button1 {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.admin-signin-box .button1 a {
+  width: 150px;
+  height: 40px;
+}
+
+@media screen and (max-width: 480px) {
+  .admin-signin-box {
+    margin: 15% 5% 5% 5%;
   }
-  
-  .signin-box h2 {
-    font-weight: 600;
+  .admin-signin-box .box1 {
+    padding: 2% 10% 0% 10%;
   }
-  
-  .box1 {
-    padding-top: 20px;
-    text-align: center;
-    width: 500px !important;
-    margin-right: 60px;
+}
+
+@media screen and (max-width: 576px) and (min-width: 480px) {
+  .admin-signin-box {
+    margin: 15% 5% 5% 5%;
   }
-  .box1 TextField{
-    width: 100px;
+  .admin-signin-box .box1 {
+    padding: 2% 10% 0% 10%;
   }
-  
-  .button1 {
-    padding-top: 20px;
-    text-align: center;
+}
+
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  .admin-signin-box {
+    margin: 15% 10% 5% 10%;
   }
-  
-  .button1 a {
-    width: 150px;
-    height: 40px;
+  .admin-signin-box .box1 {
+    padding: 2% 15% 0% 15%;
   }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .admin-signin-box {
+    margin: 10% 20% 5% 20%;
+  }
+  .admin-signin-box .box1 {
+    padding: 2% 15% 0% 15%;
+  }
+}
+
+
+@media screen and (max-width: 1200px) and (min-width: 992px){
+  .admin-signin-box {
+    margin: 7% 25% 5% 25%;
+  }
+  .admin-signin-box .box1 {
+    padding: 2% 20% 0% 20%;
+  }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1200px){
+  .admin-signin-box {
+    margin: 5% 30% 5% 30%;
+  }
+  .admin-signin-box .box1 {
+    padding: 2% 20% 0% 20%;
+  }
+}
+

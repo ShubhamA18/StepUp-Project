@@ -94,6 +94,14 @@ const Header = () => {
             navigate('/user/services');
         }
     }
+    const profileSignInCheck=()=>{
+        if (user.firstName === "Guest" && user.lastName === "Account") {
+            navigate('/user/signin');
+        }
+        else {
+            navigate('/user/profile');
+        }
+    }
 
     //Search 
     const [searchTerm, setSearchTerm] = useState('');
@@ -184,12 +192,11 @@ const Header = () => {
                                         {
                                             isOpenDropDown !== false &&
                                             <ul className='dropdownmenu'>
-                                                <li><Button className='align-items-center'> <AssignmentIndOutlinedIcon /> Profile</Button></li>
+                                                <li><Button onClick={profileSignInCheck}><AssignmentIndOutlinedIcon /> Profile</Button></li>
                                                 <li><Button><PinDropOutlinedIcon /> Tracking</Button></li>
                                                 <li><Button><FavoriteBorderIcon /> My Wishlist</Button></li>
                                                 <li>{userType()}</li>
                                             </ul>
-
                                         }
                                     </li>
                                 </ClickAwayListener>

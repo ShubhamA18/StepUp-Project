@@ -9,12 +9,14 @@ import Products from '../Pages/Admin/Products';
 import Home from '../Pages/Home/index';
 import Signin from '../Pages/signin/Signin';
 import Signup from '../Pages/signup/Signup';
+import AddProduct from '../components/AddProduct/AddProduct';
 import NotFound from '../components/NotFound/NotFound';
 import Footer from '../components/footer/Footer';
 import AdminHeader from '../components/header/AdminHeader';
 import Header from '../components/header/Header';
 import NoProductFound from '../components/productSearch/NoProductFound';
 import ProductSearch from '../components/productSearch/ProductSearch';
+import Profile from '../components/profile/Profile';
 import WashingForm from '../components/washing/WashingForm';
 
 const Routing = () => {
@@ -26,13 +28,13 @@ const Routing = () => {
     };
 
     const isSigninPage=()=>{
-        const { pathname}=location;
+        const {pathname}=location;
         return pathname==='/user/signin' || pathname==='/user/signup';
     }
 
     const isAdminPages=()=>{
         const{pathname}=location;
-        return pathname==='/admin/product' || pathname==='/admin/order' || pathname==='/admin/home';
+        return pathname==='/admin/product' || pathname==='/admin/order' || pathname==='/admin/home' || pathname==='/admin/addProduct';
     }
 
     return (
@@ -49,6 +51,8 @@ const Routing = () => {
                 <Route path='/admin/signin' element={<AdminSignin />} />
                 <Route path='/admin/home' element={<AdminHome/>}></Route>
                 <Route path='/admin/product' element={<Products/>}></Route>
+                <Route path='/admin/addProduct' element={<AddProduct/>}></Route>
+                <Route path='/user/profile' element={<Profile/>}></Route>
                 
                 {/* <Route path='/admin/products' element={<ProductsPage/>}></Route> */}
                 <Route path='/admin/order' element={<Order/>}></Route>
