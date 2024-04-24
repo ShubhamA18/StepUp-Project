@@ -2,6 +2,7 @@
 import React from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 
+import AboutUs from '../Pages/About/AboutUs';
 import AdminHome from '../Pages/Admin/AdminHome';
 import AdminSignin from '../Pages/Admin/AdminSignin';
 import Order from '../Pages/Admin/Order';
@@ -53,6 +54,7 @@ const Routing = () => {
                 <Route path='/admin/product' element={<Products/>}></Route>
                 <Route path='/admin/addProduct' element={<AddProduct/>}></Route>
                 <Route path='/user/profile' element={<Profile/>}></Route>
+                <Route path='/user/about' element={<AboutUs/>}></Route>
                 
                 {/* <Route path='/admin/products' element={<ProductsPage/>}></Route> */}
                 <Route path='/admin/order' element={<Order/>}></Route>

@@ -1,31 +1,30 @@
-.footerWrapper{padding: 50px 20px 20px 20px; width: 100%;}
-.footerWrapper .footerBoxes{padding-bottom: 10px;}
-.footerWrapper .footerBoxes .box{background: #F4F6FA; padding: 10px 20px; border-radius: 15px; } 
-.footerWrapper .footerBoxes .box .info{padding-left: 20px;}
-.footerWrapper .footerBoxes .box  img{width: 42px ;position: relative; transition: all 0.2s ease-in-out;}
-.footerWrapper .footerBoxes .box .info h4{font-size: 15px; font-weight: 600;}
-.footerWrapper .footerBoxes .box .info p{margin-bottom: 0px; font-size: 14px; opacity: 0.8; }
-.footerWrapper .footerBoxes .box:hover img{transform: translateY(-5px);}
+.footerWrapper{margin-top: 40px; width: 100%; padding: 60px 200px 20px 200px; background-color: black;}
+
+.footerWrapper footer{color: white; }
+.footerWrapper footer .footerSection{width: auto; padding: 0px 0px;} 
+
+.footerWrapper footer .footerSection .logo{text-align: center;}
+.footerWrapper footer .footerSection .logo img{width: 70px; height: 115px;}
+.footerWrapper footer .footerSection .logo img:hover{cursor: pointer;}
+
+.footerWrapper footer .footerSection .info svg{color: blue;}
+
+.footerWrapper footer .footerSection h3{color: antiquewhite; padding-bottom: 6px;}
+.footerWrapper footer .footerSection ul{padding-left: 0px;}
+.footerWrapper footer .footerSection ul li{list-style: none; margin-bottom: 8px;}
+.footerWrapper footer .footerSection ul li a{opacity: 0.8; font-size: 500; transition: all 0.2s ease-in-out; text-decoration: none; color: white;}
+.footerWrapper footer .footerSection ul li a:hover{text-decoration: none;color: rgb(0, 0, 255)  !important; opacity: 1; padding-left: 5px;}
 
 
-footer{padding: 30px 5px 10px 5px; background: #f1f1f1; border-radius: 15px;}
-footer p, footer a{font-size: 14px;}
-footer .part1 svg{color: rgb(0, 0, 255)  !important;}
-footer .part1 .footerLogo {text-align: center;}
-footer .part1 .footerLogo img{width: 70px; height: 115px;}
-footer .part1 .footerLogo p{color: rgb(0, 0, 124); font-weight: 600}
+.footerWrapper footer .social {text-align: center; margin-top: 10px;}
+.footerWrapper footer .social ul{display: flex;justify-content: center; }
+.footerWrapper footer .social ul li{list-style: none;margin: 0px 8px;}
+.footerWrapper footer .social ul li a{display: flex; align-items: center; justify-content: center; width: 35px;
+     height: 35px; background: rgb(0, 0, 255); border-radius: 50%; transition: all 0.2s ease-in-out !important;}
+.footerWrapper footer .social ul li a svg{color: #fff !important;}
+.footerWrapper footer .social ul li a:hover{background:red;}
 
-footer  h3{color: #000; font-weight: 600; margin-bottom: 20px;}
-footer .part2 ul{padding-left: 10px;}
-footer .part2 ul li{list-style: none; margin-bottom: 12px; padding-left: -32px;}
-footer .part2 ul li a{color:#000; opacity: 0.8; font-size: 500; transition: all 0.2s ease-in-out; text-decoration: none;}
-footer .part2 ul li a:hover{text-decoration: none;color: rgb(0, 0, 255)  !important; opacity: 1; padding-left: 5px;}
-
-
-footer .social {margin-top: 50px;}
-footer .part3 .social ul{ padding-left: 25px; }
-
-footer .part3 .social ul li a{display: flex; align-items: center; justify-content: center; width: 40px;
+/* footer .part3 .social ul li a{display: flex; align-items: center; justify-content: center; width: 40px;
      height: 40px; background: rgb(0, 0, 255); border-radius: 50%; transition: all 0.2s ease-in-out !important;}
 footer .part3 .social ul li a svg{color: #fff !important;}
-footer .part3 .social ul li a:hover{background:rgb(51, 51, 51);}
+footer .part3 .social ul li a:hover{background:rgb(51, 51, 51);} */
