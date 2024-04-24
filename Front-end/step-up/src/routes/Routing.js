@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 
@@ -21,49 +20,69 @@ import Profile from '../components/profile/Profile';
 import WashingForm from '../components/washing/WashingForm';
 
 const Routing = () => {
-
     const location = useLocation();
-    const isAdminSignin = () => {
-        const { pathname } = location;
-        return pathname.startsWith('/admin') ;
+    const pathname = location.pathname;
+
+
+    const isAdminSigninPage = pathname === '/admin/signin';
+    // Check if the current path is within admin routes
+    const isAdminRoute = pathname.startsWith('/admin');
+
+    // Check if the current path is within signin or signup routes
+    const isAuthRoute = pathname.startsWith('/user/signin') || pathname.startsWith('/user/signup');
+
+    // Render the appropriate header
+    const renderHeader = () => {
+        if (isAdminRoute) {
+            if (isAdminSigninPage) {
+                return null;
+            }
+            else {
+                return <AdminHeader />;
+            }
+
+        } else if (!isAuthRoute) {
+            return <Header />;
+        }
+        return null;
     };
 
-    const isSigninPage=()=>{
-        const {pathname}=location;
-        return pathname==='/user/signin' || pathname==='/user/signup';
-    }
-
-    const isAdminPages=()=>{
-        const{pathname}=location;
-        return pathname==='/admin/product' || pathname==='/admin/order' || pathname==='/admin/home' || pathname==='/admin/addProduct';
-    }
+    // Render the appropriate footer
+    const renderFooter = () => {
+        if (!isAdminRoute && !isAuthRoute) {
+            return <Footer />;
+        }
+        return null;
+    };
 
     return (
         <div>
-            {!isAdminSignin() && !isSigninPage() && <Header /> || isAdminPages()  && <AdminHeader/>}
+            {/* Render the appropriate header */}
+            {renderHeader()}
 
+            {/* Define the Routes */}
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/user/signin' element={<Signin />} />
                 <Route path='/user/signup' element={<Signup />} />
-                <Route path='/user/services' element={<WashingForm/>}></Route>
-                <Route path='/user/productSearch' element={<ProductSearch/>}></Route>
-                <Route path='/user/productNotFound' element={<NoProductFound/>}></Route>
+                <Route path='/user/services' element={<WashingForm />}></Route>
+                <Route path='/user/productSearch' element={<ProductSearch />}></Route>
+                <Route path='/user/productNotFound' element={<NoProductFound />}></Route>
+                <Route path='/user/profile' element={<Profile />}></Route>
+                <Route path='/user/about' element={<AboutUs />}></Route>
+
                 <Route path='/admin/signin' element={<AdminSignin />} />
-                <Route path='/admin/home' element={<AdminHome/>}></Route>
-                <Route path='/admin/product' element={<Products/>}></Route>
-                <Route path='/admin/addProduct' element={<AddProduct/>}></Route>
-                <Route path='/user/profile' element={<Profile/>}></Route>
-                <Route path='/user/about' element={<AboutUs/>}></Route>
-                
-                {/* <Route path='/admin/products' element={<ProductsPage/>}></Route> */}
-                <Route path='/admin/order' element={<Order/>}></Route>
+                <Route path='/admin/home' element={<AdminHome />}></Route>
+                <Route path='/admin/product' element={<Products />}></Route>
+                <Route path='/admin/addProduct' element={<AddProduct />}></Route>
+                <Route path='/admin/order' element={<Order />}></Route>
+
                 <Route path='*' element={<NotFound />} />
             </Routes>
 
-            {!isAdminSignin() && !isSigninPage() && <Footer/>}
+            {renderFooter()}
         </div>
-    )
+    );
 }
 
 export default Routing;

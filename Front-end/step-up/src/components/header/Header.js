@@ -20,7 +20,6 @@ const Header = () => {
     const [isOpenDropDown, setisOpenDropDown] = useState(false);
     const [isOpenDropDown1, setisOpenDropDown1] = useState(false);
 
-
     const [user, setUser] = useState({
         firstName: "",
         lastName: "",
